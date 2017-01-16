@@ -15,3 +15,9 @@ Template.RecipeSingle.helpers({
 	}
 });
 
+Template.RecipeSingle.events({
+	'click .toggle-favorite': function() {
+		debugger
+		Meteor.call('toggleFavorite', this._id, this.isFavorite);
+	}
+});

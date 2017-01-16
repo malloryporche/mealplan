@@ -1,10 +1,16 @@
 <template name="RecipeSingle">
-	<h1> {{recipe.name}} </h1>
+	<h1>
+		<a class="toggle-favorite"><i class="fa {{#if recipe.isFavorite}} fa-star {{else}} fa-star-o {{/if}}"></i></a> {{recipe.name}}
+	</h1>
 	<h2>{{recipe.desc}}</h2>
+	<h3>Image</h3>
 	<h3>Ingredients</h3>
 		{{#each recipe.ingredients}}
 			<ul>
 				<li> {{name}} - {{amount}} </li>
 			</ul>
 		{{/each}}
+
+	<h3>Instructions</h3>
+	<h3>Nutritional Information</h3>
 </template>

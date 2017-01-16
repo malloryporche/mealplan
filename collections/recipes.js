@@ -58,7 +58,12 @@ RecipeSchema = new SimpleSchema({
 			autoform: {
 				type: "hidden"
 			}
-		}
+		},
+	isFavorite: {
+		type: Boolean,
+		defaultValue: false,
+		optional: true,
+	}
 });
 
 Meteor.methods({
@@ -68,8 +73,15 @@ Meteor.methods({
 				inMenu: !currentState
 			}
 		});
+	},
+	toggleFavorite: function(id, currentState) {
+		Recipes.update(id, {
+			$set: {
+				isFavorite: !currentState
+			}
+		});
 	}
-})
+});
 
 
 Recipes.attachSchema( RecipeSchema );

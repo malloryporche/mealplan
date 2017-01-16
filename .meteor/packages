@@ -28,13 +28,15 @@ dburles:collection-helpers		#
 raix:handlebar-helpers			# 
 aldeed:collection2				# Allows us to attach schema
 aldeed:autoform					# Auto generate forms
-accounts-ui						# Accounts user interface
-accounts-password				# Security for accounts
 matb33:bootstrap-glyphicons		# Bootstrap glyphicons
 zimme:active-route				# Routing system
 gwendall:auth-client-callbacks	# 0-auth client callbacks
 mquandalle:stylus				# CSS Framework
-meteortoys:allthings			# Using this to view items within Mongo database
+meteortoys:allthings			# Using this to view items within Mongo database						#
 ongoworks:security
 datariot:ganalytics
 check
+accounts-base					# Implements basic functions necessary for user accounts
+accounts-ui						# Implements login buttons for accounts
+accounts-google					# Adds login service for Google
+accounts-password				# Adds password functionality for accounts

@@ -11,13 +11,10 @@ Template.Recipe.events({
 		Meteor.call('toggleMenuItem', this._id, this.inMenu);
 	},
 	'click .fa-trash': function() {
-		console.log(this);
+		Meteor.call('deleteRecipe', this._id)
 
 	},
-	'click .fa-star': function() {
-		Meteor.call('toggleFavorite', this._id, this.isFavorite);
-	},
-	'click .fa-star-o': function() {
+	'click .fa-star, .fa-star-o': function() {
 		Meteor.call('toggleFavorite', this._id, this.isFavorite);
 	}
 });

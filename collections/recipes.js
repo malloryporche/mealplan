@@ -63,7 +63,11 @@ RecipeSchema = new SimpleSchema({
 		type: Boolean,
 		defaultValue: false,
 		optional: true,
-	}
+		autoform: {
+			type: 'hidden'
+		}
+	},
+
 });
 
 Meteor.methods({
@@ -74,12 +78,15 @@ Meteor.methods({
 			}
 		});
 	},
-	toggleFavorite: function(id, currentState) {
+	toggleFavorite: function(id, isFavorite) {
 		Recipes.update(id, {
 			$set: {
-				isFavorite: !currentState
+				isFavorite: !isFavorite
 			}
 		});
+	},
+	deleteRecipe: function(id) {
+		Recipes.remove(id);
 	}
 });
 

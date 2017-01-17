@@ -17,7 +17,9 @@ Template.RecipeSingle.helpers({
 
 Template.RecipeSingle.events({
 	'click .toggle-favorite': function() {
-		debugger
-		Meteor.call('toggleFavorite', this._id, this.isFavorite);
+		// debugger
+		var id = FlowRouter.getParam('id')
+		console.log(id, id.isFavorite);
+		Meteor.call('toggleFavorite', id);
 	}
 });

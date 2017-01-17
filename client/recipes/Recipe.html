@@ -5,6 +5,8 @@
 			{{desc}}
 		</p>
 		<a href="/recipe/{{_id}}">View Details</a>
+		<i class="fa fa-trash"></i>
+		<i class="fa {{#if isFavorite}}fa-star{{else}} fa-star-o{{/if}}"></i>
 		{{#if inMenu}}
 					<button class="btn-deny toggle-menu">Remove from Menu</button>
 		{{else}}

@@ -329,7 +329,7 @@ input, select, textarea
         margin-bottom 10px
     button
         margin-top 20px
-    .fa-trash
+    .fa-trash, .fa-pencil, .fa-star-o, .fa-star
         opacity 0.3
         cursor pointer
         position absolute
@@ -343,20 +343,14 @@ input, select, textarea
         &:hover
             color red
             opacity 0.6
+    .fa-pencil 
+        &:hover
+            color purp
+        right 60px
     .fa-star, .fa-star-o
-        opacity 0.3
-        cursor pointer
-        position absolute
-        top 0
-        right 50px
-        font-size 1.6em  
-        display block
-        padding 20px
-        color black
-        trans()
         &:hover
             color yellow
-            opacity 0.6
+        right 30px
     .ingredient
         display inline-block
         margin-right 10px

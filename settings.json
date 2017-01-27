@@ -1,8 +1,16 @@
-
 {
+   "public": {
+   	"ga": {
+   		"account":"UA-91009612-1",
+   		"debug": true
+   	}
+   },
+
   "galaxy.meteor.com": { 
      "env": { 
        "MONGO_URL": "mongodb://admin:Intentional@ds111469.mlab.com:11469/recipes" 
      } 
    }
 }
+
+  

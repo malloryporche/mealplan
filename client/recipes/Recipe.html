@@ -7,9 +7,10 @@
 		{{#if editMode}}
 			{{> quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true}}
 
-			{{else}}
+		{{else}}
 			
 			<a href="/recipe/{{_id}}">View Details</a>
+			
 			{{#if inMenu}}
 					<button class="btn-deny toggle-menu">Remove from Menu</button>
 			{{else}}

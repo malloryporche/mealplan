@@ -40,3 +40,5 @@ accounts-base					# Implements basic functions necessary for user accounts
 accounts-ui						# Implements login buttons for accounts
 accounts-google					# Adds login service for Google
 accounts-password				# Adds password functionality for accounts
+juliancwirko:s-alert
+juliancwirko:s-alert-jelly

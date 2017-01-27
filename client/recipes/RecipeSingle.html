@@ -1,6 +1,6 @@
 <template name="RecipeSingle">
 	<h1>
-		<a class="toggle-favorite"><i class="fa {{#if recipe.isFavorite}} fa-star {{else}} fa-star-o {{/if}}"></i></a> {{recipe.name}}
+	{{recipe.name}}<a class="toggle-favorite"><i class="fa {{#if recipe.isFavorite}} fa-star {{else}} fa-star-o {{/if}}"></i></a>
 	</h1>
 	<h2>{{recipe.desc}}</h2>
 	<h3>Recipe Image</h3>

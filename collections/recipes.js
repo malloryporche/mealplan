@@ -87,6 +87,9 @@ Meteor.methods({
 	},
 	deleteRecipe: function(id) {
 		Recipes.remove(id);
+	},
+	setSession: function() {
+		Session.set('')
 	}
 });
 

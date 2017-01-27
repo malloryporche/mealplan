@@ -16,7 +16,10 @@ Template.Recipe.events({
 		Meteor.call('toggleMenuItem', this._id, this.inMenu);
 	},
 	'click .fa-trash': function() {
-		Meteor.call('deleteRecipe', this._id)
+		debugger
+		console.log('deleting'),
+		Meteor.call('deleteRecipe', this._id),
+		sAlert.success('Your message');
 
 	},
 	'click .fa-star': function() {

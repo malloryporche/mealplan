@@ -1,6 +1,6 @@
 
 Template.NewRecipe.events({
-  'click .search-food': function() {
-    Meteor.call('searchFood', 'butter');
+  'click .search-ingredient': function() {
+    Meteor.call('searchIngredient', 'butter');
   }
 });

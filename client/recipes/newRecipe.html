@@ -3,5 +3,11 @@
 	<h1>Add a new recipe</h1>
 		{{> quickForm collection="Recipes" id="insertRecipeForm" type="insert" class="new-recipe-form" }}
 	   <a class="search-ingredient">search ingredient</a>
+     {{#each ingredients}}
+        {{name}}
+        {{#each list}}
+            {{name}}
+        {{/each}}
+     {{/each}}
 	</div>
 </template>

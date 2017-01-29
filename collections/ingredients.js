@@ -10,15 +10,30 @@ Ingredients.allow({
 	}
 });
 
+IngredientsListSchema = new SimpleSchema({
+	offset: {
+		type: String
+	},
+	name: {
+		type: String
+	},
+	group: {
+		type: String
+	},
+	ds: {
+		type: String
+	},
+	ndbno: {
+		type: String
+	}
+});
+
 IngredientsSchema = new SimpleSchema({
 	name: {
 		type: String
 	},
-	amount: {
-		type: String
-	},
 	list: {
-		type: Object
+		type: [IngredientsListSchema]
 	}
 });
 
@@ -26,8 +41,9 @@ Meteor.methods({
 	ingredientsCache: function(ingredient) {
 		// get data from db
 		var data = Ingredients.find({name: ingredient}).fetch();
+		console.log(IngredientsSearchResults.find({name: ingredient}).fetch());
 
-		return { data };
+		return data;
 	}
 });
 

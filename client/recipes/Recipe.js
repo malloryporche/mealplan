@@ -1,6 +1,8 @@
 Template.Recipe.onCreated(function(){
 	this.editMode = new ReactiveVar(false);
 });
+
+
 Template.Recipe.helpers({
 	updateRecipeId: function() {
 		return this._id;

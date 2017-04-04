@@ -33,12 +33,14 @@ zimme:active-route				# Routing system
 gwendall:auth-client-callbacks	# 0-auth client callbacks
 mquandalle:stylus				# CSS Framework
 meteortoys:allthings			# Using this to view items within Mongo database						#
-ongoworks:security
-datariot:ganalytics
-check
+ongoworks:security				#
+datariot:ganalytics				# GA for Meteor
+check							#
 accounts-base					# Implements basic functions necessary for user accounts
 accounts-ui						# Implements login buttons for accounts
 accounts-google					# Adds login service for Google
 accounts-password				# Adds password functionality for accounts
-juliancwirko:s-alert
-juliancwirko:s-alert-jelly
+juliancwirko:s-alert 			# Adds notifications functionality
+juliancwirko:s-alert-jelly		# Adds jelly effect for notifications functionality
+yogiben:autoform-file			# Image upload for autoform
+cfs:standard-packages

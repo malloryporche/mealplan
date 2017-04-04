@@ -19,7 +19,7 @@ Template.Recipe.events({
 		//debugger
 		//console.log('deleting ' + this.name),
 		Meteor.call('deleteRecipe', this._id),
-		sAlert.success('You have successfully deleted the' + this.name + ' recipe');
+		sAlert.success('You have successfully deleted the ' + this.name + ' recipe');
 
 	},
 	'click .fa-star': function() {

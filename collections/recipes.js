@@ -67,6 +67,18 @@ RecipeSchema = new SimpleSchema({
 			type: 'hidden'
 		}
 	},
+	image: {
+		type: String,
+		optional: true,
+		autoform: {
+			afFieldInput: {
+				type: 'fileUpload',
+				collection: "Recipes",
+				label: "Choose file",
+				previewTemplate: 'myFilePreview'
+			}
+		}
+	}
 
 });
 

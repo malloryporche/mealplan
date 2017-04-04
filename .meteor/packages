@@ -22,10 +22,11 @@ kadira:flow-router				# Installing GA for app tracking
 kadira:blaze-layout				# Templating
 erasaur:meteor-lodash			#
 fortawesome:fontawesome			# Fontawesome includes
-spiderable						# 			
-fastclick						# 
+http                           #  make network calls
+spiderable						#
+fastclick						#
 dburles:collection-helpers		#
-raix:handlebar-helpers			# 
+raix:handlebar-helpers			#
 aldeed:collection2				# Allows us to attach schema
 aldeed:autoform					# Auto generate forms
 matb33:bootstrap-glyphicons		# Bootstrap glyphicons

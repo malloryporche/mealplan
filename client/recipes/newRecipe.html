@@ -2,7 +2,18 @@
 	<div class="new-recipe-container">
 	<h1>Add a new recipe</h1>
 		{{> quickForm collection="Recipes" id="insertRecipeForm" type="insert" class="new-recipe-form" }}
-		
+
 		{{> myFilePreview}}
+
+	   <a class="search-ingredient">search ingredient</a>
+     {{#each ingredients}}
+        {{name}}
+        {{#each list}}
+          <ul>
+            <li>{{name}}</li>
+          </ul>
+        {{/each}}
+     {{/each}}
+
 	</div>
 </template>
